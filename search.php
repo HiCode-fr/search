@@ -11,7 +11,7 @@ function rechercher($mystring,$bdd)
 			catch(Exception $e)
 			{
 				$erreur = ("Erreur : " . $e->getMessage() );
-				gerererreur($erreur,__LINE__);	
+				die($erreur);
 			}
 			if($query_search->rowCount() >= 1)
 			{
@@ -29,7 +29,7 @@ function rechercher($mystring,$bdd)
 				catch(Exception $e)
 				{
 					$erreur = ("Erreur : " . $e->getMessage() );
-					gerererreur($erreur,__LINE__);	
+					die($erreur);
 				}
 				if($query_search->rowCount() >= 3)
 				{
