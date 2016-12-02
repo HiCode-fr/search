@@ -40,4 +40,4 @@ function rechercher($mystring,$bdd)
 
 	return $query_search;
 }
-    ?>
+?>
